@@ -1,8 +1,8 @@
 # Proliga App (Front-End)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+Angular 8.x.x generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6 is used for this project.
 
-This is a Front-End application for Proliga Application.
+This is a Front-End application for ProLiga Application.
 
 ## Development server
 
