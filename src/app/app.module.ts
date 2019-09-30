@@ -17,6 +17,7 @@ import {ProligaAPI} from './services/proliga-api.service';
 import {ClubService} from './services/club.service';
 import {ClubTableService} from './components/club-table/club-table.service';
 import {PlayerService} from './services/player.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {PlayerService} from './services/player.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     ProligaAPI,
