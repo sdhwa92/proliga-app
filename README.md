@@ -10,7 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Fake backend JSON server
 
-Run `json-server --watch fake-data.json`. This will run the json server so that the app can consume the fake data.
+Run `json-server --watch fake-data.json`. This will run the json server to `http://localhost:3000` so that the app can consume the fake data.
 
 ## Code scaffolding
 
