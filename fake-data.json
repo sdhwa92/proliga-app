@@ -9,7 +9,16 @@
       "goals": 14,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "Argentina"
     },
     {
       "player_id": 2,
@@ -20,7 +29,16 @@
       "goals": 12,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "South Korea"
     },
     {
       "player_id": 3,
@@ -31,7 +49,16 @@
       "goals": 1,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "Netherlands"
     },
     {
       "player_id": 4,
@@ -42,7 +69,16 @@
       "goals": 8,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "Denmark"
     },
     {
       "player_id": 5,
@@ -53,7 +89,16 @@
       "goals": 2,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "England"
     },
     {
       "player_id": 6,
@@ -64,7 +109,16 @@
       "goals": 2,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "Spain"
     },
     {
       "player_id": 7,
@@ -75,7 +129,16 @@
       "goals": 0,
       "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
       "user_type_id": 1,
-      "club_id": 1
+      "current_club": {
+        "club_id": 1,
+        "club_name": "My Team",
+        "club_desc": "This is My Team.",
+        "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+        "max_players": 15,
+        "league_id": 1,
+        "current_season_id": 1
+      },
+      "nationality": "Italy"
     }
   ],
   "clubs": [
