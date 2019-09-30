@@ -4,6 +4,9 @@ Angular 8.x.x generated with [Angular CLI](https://github.com/angular/angular-cl
 
 This is a Front-End application for ProLiga Application.
 
+## Install dependencies
+Run `npm install` to install dependencies of the application.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
