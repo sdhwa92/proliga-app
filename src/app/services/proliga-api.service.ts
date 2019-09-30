@@ -7,7 +7,7 @@ import * as _ from 'lodash';
  *  Mappings to services on Proliga API
  */
 export const PROLIGA_API = {
-  LOCAL_ENDPOINT: 'http://localhost:5000/',
+  LOCAL_ENDPOINT: 'http://localhost:3000/',
   PRODUCTION_ENDPOINT: '',
   ENDPOINTS: {
     CLUBS: {
@@ -16,6 +16,12 @@ export const PROLIGA_API = {
       },
       GET_ALL_CLUBS: 'clubs',
       GET_A_CLUB: 'clubs/{clubname}'
+    },
+    PLAYERS: {
+      VERSION: {
+        ONE: 'v1'
+      },
+      GET_ALL_PLAYERS: 'players'
     }
   }
 };

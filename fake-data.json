@@ -1,0 +1,111 @@
+{
+  "players": [
+    {
+      "player_id": 1,
+      "first_name": "Lionel",
+      "last_name": "Messi",
+      "email": "test@test.com",
+      "position_id": 2,
+      "goals": 14,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 2,
+      "first_name": "Heung-min",
+      "last_name": "Son",
+      "email": "test@test.com",
+      "position_id": 2,
+      "goals": 12,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 3,
+      "first_name": "Van",
+      "last_name": "Dijk",
+      "email": "test@test.com",
+      "position_id": 4,
+      "goals": 1,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 4,
+      "first_name": "Christian",
+      "last_name": "Eriksen",
+      "email": "test@test.com",
+      "position_id": 3,
+      "goals": 8,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 5,
+      "first_name": "Kyle",
+      "last_name": "Walker",
+      "email": "test@test.com",
+      "position_id": 5,
+      "goals": 2,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 6,
+      "first_name": "Gerard",
+      "last_name": "Pique",
+      "email": "test@test.com",
+      "position_id": 4,
+      "goals": 2,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    },
+    {
+      "player_id": 7,
+      "first_name": "Gianluigi",
+      "last_name": "Buffon",
+      "email": "test@test.com",
+      "position_id": 1,
+      "goals": 0,
+      "photo_url": "https://www.oneworldplayproject.com/wp-content/uploads/2016/03/avatar-1024x1024.jpg",
+      "user_type_id": 1,
+      "club_id": 1
+    }
+  ],
+  "clubs": [
+    {
+      "club_id": 1,
+      "club_name": "My Team",
+      "club_desc": "This is My Team.",
+      "club_logo_url": "https://image.shutterstock.com/image-vector/soccer-logo-emblem-260nw-341416676.jpg",
+      "max_players": 15,
+      "league_id": 1,
+      "current_season_id": 1
+    },
+    {
+      "club_id": 2,
+      "club_name": "My Team 2",
+      "club_desc": "This is My Team 2.",
+      "club_logo_url": "https://www.designevo.com/res/templates/thumb_small/blue-star-and-gray-soccer.png",
+      "max_players": 15,
+      "league_id": 1,
+      "current_season_id": 1
+    }
+  ],
+  "leagues": [
+    {
+      "league_id": 1,
+      "league_name": "Queensland K-League",
+      "league_logo_url": "https://cdn.pastemagazine.com/www/system/images/photo_albums/league-crests/large/koreafinal.jpg?1384968217",
+      "max_teams": 10,
+      "max_players": 15,
+      "min_players": 5
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClubTableComponent } from './components/club-table/club-table.component';
 import { HomeComponent } from './components/home/home.component';
 import {ClubsComponent} from './components/clubs/clubs.component';
-import {PlayersComponent} from './players/players.component';
+import {PlayersComponent} from './components/players/players.component';
 
 const appRoutes: Routes = [
   {
