@@ -1,3 +1,5 @@
+import {ClubModel} from './club.model';
+
 export interface PlayerModel {
   player_id: number;
   first_name: string;
@@ -7,5 +9,6 @@ export interface PlayerModel {
   goals: number;
   photo_url: string;
   user_type_id: number;
-  team_id: number;
+  current_club: ClubModel;
+  nationality: string;
 }

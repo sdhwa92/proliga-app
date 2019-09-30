@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DataSource} from '@angular/cdk/table';
+import {Observable} from 'rxjs';
 
 import {PlayerService} from '../../services/player.service';
 
@@ -11,23 +13,24 @@ import {PlayerModel} from '../../models/player.model';
 })
 export class PlayersComponent implements OnInit {
 
-  players: PlayerModel[];
+  dataSource = new PlayerDataSource(this.playerService);
+  displayedColumns = ['playerName', 'club', 'nationality'];
 
   constructor(
     private playerService: PlayerService
   ) { }
 
   ngOnInit() {
-    this.getPlayers();
   }
 
-  getPlayers() {
-    this.playerService.getAllPlayers().subscribe(
-      data => {
-        this.players = data;
-        console.log(this.players);
-      }
-    );
-  }
+}
 
+export class PlayerDataSource extends DataSource<any> {
+  constructor(private playerService: PlayerService) {
+    super();
+  }
+  connect(): Observable<PlayerModel[]> {
+    return this.playerService.getAllPlayers();
+  }
+  disconnect() {}
 }
