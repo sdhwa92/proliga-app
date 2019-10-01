@@ -4,11 +4,13 @@ import {RouterModule, Routes} from '@angular/router';
 import {AdminComponent} from './admin.component';
 
 import {adminRoutesNames} from './admin.routes.names';
+import {AuthGuardService} from '../services/auth-guard.service';
 
 const adminRoutes: Routes = [
   {
     path: adminRoutesNames.ROOT,
-    component: AdminComponent
+    component: AdminComponent,
+    canActivate: [AuthGuardService]
   }
 ];
 

@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app.router';
 import {HttpClientModule} from '@angular/common/http';
 import {MatTableModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 /* Components */
 import {AppComponent} from './app.component';
@@ -18,7 +19,6 @@ import {ProligaAPI} from './services/proliga-api.service';
 import {ClubService} from './services/club.service';
 import {ClubTableService} from './components/club-table/club-table.service';
 import {PlayerService} from './services/player.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [

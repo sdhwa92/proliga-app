@@ -1,3 +1,4 @@
 export const adminRoutesNames = {
-  ROOT: ''
+  ROOT: '',
+  LOGIN: 'login'
 };
