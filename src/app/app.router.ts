@@ -5,6 +5,8 @@ import {HomeComponent } from './components/home/home.component';
 import {ClubsComponent} from './components/clubs/clubs.component';
 import {PlayersComponent} from './components/players/players.component';
 
+import {PlayerService} from './services/player.service';
+
 import {appRoutesNames} from './app.routes.names';
 
 const appRoutes: Routes = [
@@ -23,7 +25,10 @@ const appRoutes: Routes = [
   },
   {
     path: appRoutesNames.PLAYERS,
-    component: PlayersComponent
+    component: PlayersComponent,
+    resolve: {
+      playerData: PlayerService
+    }
   },
   {
     path: appRoutesNames.ADMIN,
@@ -43,6 +48,9 @@ const appRoutes: Routes = [
   ],
   exports: [
     RouterModule
+  ],
+  providers: [
+    PlayerService
   ]
 } )
 export class AppRoutingModule {}
