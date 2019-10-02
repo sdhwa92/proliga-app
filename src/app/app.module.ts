@@ -5,7 +5,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app.router';
 import {HttpClientModule} from '@angular/common/http';
-import {MatTableModule} from '@angular/material';
+import {MatTableModule, MatSortModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 /* Components */
@@ -38,7 +38,8 @@ import {PlayerService} from './services/player.service';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatSortModule
   ],
   providers: [
     ProligaAPI,

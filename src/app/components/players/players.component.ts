@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {DataSource} from '@angular/cdk/table';
 import {Observable} from 'rxjs';
+import {MatSort, MatTableDataSource} from '@angular/material';
 
 import {PlayerService} from '../../services/player.service';
 
@@ -11,26 +12,36 @@ import {PlayerModel} from '../../models/player.model';
   templateUrl: './players.component.html',
   styleUrls: ['./players.component.css']
 })
-export class PlayersComponent implements OnInit {
+export class PlayersComponent implements OnInit, AfterViewInit {
 
-  dataSource = new PlayerDataSource(this.playerService);
-  displayedColumns = ['playerName', 'club', 'nationality'];
+  public displayedColumns: string[] = ['playerName', 'club', 'nationality', 'goals'];
+  public dataSource = new MatTableDataSource<PlayerModel>();
+
+  @ViewChild(MatSort, {static: false}) sort: MatSort;
 
   constructor(
     private playerService: PlayerService
   ) { }
 
   ngOnInit() {
+    // @TODO: Use resolver so that the data can be ready before the component is rendered.
+    this.getAllPlayers();
   }
 
-}
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
+  }
 
-export class PlayerDataSource extends DataSource<any> {
-  constructor(private playerService: PlayerService) {
-    super();
+  public getAllPlayers() {
+    this.playerService.getAllPlayers()
+      .subscribe(
+        data => {
+          this.dataSource.data = data as PlayerModel[];
+        }
+      );
   }
-  connect(): Observable<PlayerModel[]> {
-    return this.playerService.getAllPlayers();
+
+  public sortData(event) {
+    console.log(event);
   }
-  disconnect() {}
 }
