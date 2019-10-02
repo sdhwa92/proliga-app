@@ -24,15 +24,18 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/shards-ui/dist/css/shards.min.css",
               "src/assets/scss/style.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/moment/min/moment.min.js"
+              "node_modules/moment/min/moment.min.js",
+              "node_modules/shards-ui/dist/js/shards.min.js",
+              "node_modules/popper.js/dist/popper.min.js"
             ]
           },
           "configurations": {

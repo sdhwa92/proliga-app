@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~8.2.8",
     "@angular/platform-browser-dynamic": "~8.2.8",
     "@angular/router": "~8.2.8",
-    "bootstrap": "^3.4.1",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
@@ -29,7 +29,9 @@
     "lodash": "4.17.11",
     "moment": "2.24.0",
     "ngx-bootstrap": "3.1.4",
+    "popper.js": "^1.15.0",
     "rxjs": "~6.5.3",
+    "shards-ui": "^3.0.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
