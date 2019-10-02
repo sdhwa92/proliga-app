@@ -1,10 +1,10 @@
 import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {DataSource} from '@angular/cdk/table';
 import {Observable} from 'rxjs';
+import {map} from 'rxjs/operators';
 import {MatSort, MatTableDataSource} from '@angular/material';
-
+import {ActivatedRoute} from '@angular/router';
 import {PlayerService} from '../../services/player.service';
-
 import {PlayerModel} from '../../models/player.model';
 
 @Component({
@@ -20,25 +20,25 @@ export class PlayersComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort, {static: false}) sort: MatSort;
 
   constructor(
-    private playerService: PlayerService
+    private playerService: PlayerService,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    // @TODO: Use resolver so that the data can be ready before the component is rendered.
-    this.getAllPlayers();
+    this.getAllData();
   }
 
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;
   }
 
-  public getAllPlayers() {
-    this.playerService.getAllPlayers()
-      .subscribe(
-        data => {
-          this.dataSource.data = data as PlayerModel[];
-        }
-      );
+  private getAllData() {
+    this.activatedRoute.data.subscribe(
+      data => {
+        console.log(data.playerData);
+        this.dataSource.data = data.playerData[0] as PlayerModel[];
+      }
+    );
   }
 
   public sortData(event) {
