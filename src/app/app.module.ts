@@ -21,6 +21,7 @@ import {ProligaAPI} from './services/proliga-api.service';
 import {ClubService} from './services/club.service';
 import {ClubTableService} from './components/club-table/club-table.service';
 import {PlayerService} from './services/player.service';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {PlayerService} from './services/player.service';
     ClubTableComponent,
     HomeComponent,
     ClubsComponent,
-    PlayersComponent
+    PlayersComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
