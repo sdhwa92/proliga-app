@@ -19,7 +19,7 @@ import {PlayersComponent} from './components/players/players.component';
 /* Services */
 import {ProligaAPI} from './services/proliga-api.service';
 import {ClubService} from './services/club.service';
-import {ClubTableService} from './components/club-table/club-table.service';
+import {ClubTableService} from './services/club-table.service';
 import {PlayerService} from './services/player.service';
 
 @NgModule({

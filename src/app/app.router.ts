@@ -6,6 +6,8 @@ import {ClubsComponent} from './components/clubs/clubs.component';
 import {PlayersComponent} from './components/players/players.component';
 
 import {PlayerService} from './services/player.service';
+import {ClubService} from './services/club.service';
+import {ClubTableService} from './services/club-table.service';
 
 import {appRoutesNames} from './app.routes.names';
 
@@ -17,7 +19,10 @@ const appRoutes: Routes = [
   },
   {
     path: appRoutesNames.CLUB_TABLES,
-    component: ClubTableComponent
+    component: ClubTableComponent,
+    resolve: {
+      clubData: ClubTableService
+    }
   },
   {
     path: appRoutesNames.CLUBS,
