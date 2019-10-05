@@ -27,6 +27,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/shards-ui/dist/css/shards-extras.min.css",
               "node_modules/shards-ui/dist/css/shards.min.css",
               "src/assets/scss/style.scss"
             ],

@@ -4,3 +4,26 @@
 
 // COMPLY MASTER Theme Elements
 @import "base";
+
+#proliga_area {
+    .shards-landing-page--1 {
+        .welcome {
+            &.custom-welcome {
+                background-image: url("../img/wrapperbgi.jpg");
+            }
+        }
+    } 
+}
+
+// Landing page
+
+.navbar-brand{
+
+    font-size : 25px;
+
+}
+
+.navbar-nav {
+
+    font-size : 20px;
+}
