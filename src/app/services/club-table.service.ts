@@ -4,9 +4,10 @@ import {Resolve, ActivatedRouteSnapshot, RouterStateSnapshot} from '@angular/rou
 import {Observable, forkJoin} from 'rxjs';
 import {ProligaAPI, PROLIGA_API} from './proliga-api.service';
 
-@Injectable()
-export class PlayerService implements Resolve<any> {
+import {ClubModel} from '../models/club.model';
 
+@Injectable()
+export class ClubTableService implements Resolve<any> {
   constructor(
     private http: HttpClient,
     private proligaApi: ProligaAPI
@@ -15,22 +16,18 @@ export class PlayerService implements Resolve<any> {
   public resolve(route: ActivatedRouteSnapshot, rstate: RouterStateSnapshot): Observable<any> {
     console.log('Logging collected route Parameter', route.params);
     const loadedResults = forkJoin([
-      this.getAllPlayers()
+      this.getAllTableData()
     ]);
 
     return loadedResults;
   }
 
-  /**
-   * Get All Players regardless Leagues
-   */
-  private getAllPlayers(): Observable<any> {
-    // console.log('get all players');
-    // Fake Backend Call
+  private getAllTableData(): Observable<ClubModel[]> {
+    // console.log('get all table data');
     return this.http
       .get<any>(
         this.proligaApi.currentAPI(PROLIGA_API.VERSION.ONE) +
-        ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.PLAYERS.GET_ALL_PLAYERS)
+        ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.CLUBS.GET_ALL_CLUBS)
       );
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatSort, MatTableDataSource} from '@angular/material';
+import {ActivatedRoute} from '@angular/router';
 
 import { ClubService } from '../../services/club.service';
 
@@ -11,21 +13,22 @@ import { ClubModel } from '../../models/club.model';
 })
 export class ClubsComponent implements OnInit {
 
-  clubs: ClubModel[];
+  // @TODO: Create club model
+  clubs: any;
 
   constructor(
+    private activatedRoute: ActivatedRoute,
     private clubService: ClubService
   ) { }
 
   ngOnInit() {
-    this.getClubs();
+    this.getAllClubs();
   }
 
-  getClubs() {
-    this.clubService.getAllClubs().subscribe(
+  private getAllClubs() {
+    this.activatedRoute.data.subscribe(
       data => {
-        this.clubs = data;
-        console.log(this.clubs);
+        console.log(data.clubsData);
       }
     );
   }

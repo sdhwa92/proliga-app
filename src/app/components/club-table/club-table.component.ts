@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ClubService } from '../../services/club.service';
-import { ClubTableService } from './club-table.service';
+import {ActivatedRoute} from '@angular/router';
+import {MatSort, MatTableDataSource} from '@angular/material';
 
 import * as _ from 'lodash';
+import {ClubModel} from '../../models/club.model';
 
 @Component({
   selector: 'app-club-table',
@@ -11,23 +11,37 @@ import * as _ from 'lodash';
   styleUrls: ['./club-table.component.css']
 })
 export class ClubTableComponent implements OnInit {
-  clubTeams: any;
+
+  public displayedColums: string[] = [
+    'club_name',
+    'played',
+    'won',
+    'drawn',
+    'lost',
+    'goals_for',
+    'goals_against',
+    'goals_difference',
+    'points'
+  ];
+  public dataSource = new MatTableDataSource<ClubModel>();
 
   constructor(
-    private clubService: ClubService,
-    private clubTableService: ClubTableService
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    this.clubService.getAllClubs().subscribe(
-      (res) => {
-        this.clubTeams = this.clubTableService.clubStandingTableOrder(res.data);
-        console.log(res);
+    this.getAllData();
+  }
+
+  private getAllData() {
+    this.activatedRoute.data.subscribe(
+      data => {
+        console.log(data.tablesData);
+        this.dataSource.data = data.tablesData[0] as ClubModel[];
       },
-      (err) => {
+      err => {
         console.log(err);
       }
     );
   }
-
 }
