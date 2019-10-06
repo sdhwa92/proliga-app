@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 /* Components */
 import {AppComponent} from './app.component';
 import {NavigationComponent} from './layout/navigation/navigation.component';
+import {FooterComponent} from './layout/footer/footer.component';
 import {ClubTableComponent} from './components/club-table/club-table.component';
 import {HomeComponent} from './components/home/home.component';
 import {ClubsComponent} from './components/clubs/clubs.component';
@@ -29,7 +30,8 @@ import {PlayerService} from './services/player.service';
     ClubTableComponent,
     HomeComponent,
     ClubsComponent,
-    PlayersComponent
+    PlayersComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

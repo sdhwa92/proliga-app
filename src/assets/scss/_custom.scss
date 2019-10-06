@@ -1,0 +1,24 @@
+#proliga_area {
+  /* Shards Template Landing Page*/
+  .shards-landing-page--1 {
+    // Header Welcome Area
+    .welcome {
+      &.custom-welcome {
+        background-image: url("../img/wrapperbgi.jpg");
+      }
+    }
+
+    // Navigation Bar (Header)
+    .navbar-brand{
+      font-size : 25px;
+    }
+    .navbar-nav {
+      font-size : 20px;
+    }
+  }
+}
+
+
+
+
+

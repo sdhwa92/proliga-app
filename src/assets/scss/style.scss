@@ -2,5 +2,10 @@
     Comply Master Theme
  */
 
-// COMPLY MASTER Theme Elements
+// Variables, Mixins
+@import "variables";
+@import "mixins";
+
+// Template Styling
 @import "base";
+@import "custom";

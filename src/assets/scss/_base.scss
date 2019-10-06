@@ -10,3 +10,26 @@ th.mat-header-cell {
   text-align: left;
   max-width: 300px;
 }
+
+/* Footer */
+#proliga_area {
+  .footer {
+    h6 {
+      color: $white;
+      text-align: center;
+    }
+
+    li {
+      list-style: none;
+      color: grey;
+    }
+
+    a {
+      color: grey;
+    }
+
+    .nav-lin {
+      color: grey;
+    }
+  }
+}
