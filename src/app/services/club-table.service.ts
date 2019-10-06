@@ -16,18 +16,18 @@ export class ClubTableService implements Resolve<any> {
   public resolve(route: ActivatedRouteSnapshot, rstate: RouterStateSnapshot): Observable<any> {
     console.log('Logging collected route Parameter', route.params);
     const loadedResults = forkJoin([
-      this.getAllClubs()
+      this.getAllTableData()
     ]);
 
     return loadedResults;
   }
 
-  private getAllClubs(): Observable<ClubModel[]> {
-    console.log('get all clubs');
-    // Fake Backend Call
+  private getAllTableData(): Observable<ClubModel[]> {
+    // console.log('get all table data');
     return this.http
       .get<any>(
-        this.proligaApi.currentAPI() + ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.CLUBS.GET_ALL_CLUBS)
+        this.proligaApi.currentAPI(PROLIGA_API.VERSION.ONE) +
+        ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.CLUBS.GET_ALL_CLUBS)
       );
   }
 }

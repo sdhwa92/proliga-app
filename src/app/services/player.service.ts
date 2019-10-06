@@ -25,11 +25,12 @@ export class PlayerService implements Resolve<any> {
    * Get All Players regardless Leagues
    */
   private getAllPlayers(): Observable<any> {
-    console.log('get all players');
+    // console.log('get all players');
     // Fake Backend Call
     return this.http
       .get<any>(
-        this.proligaApi.currentAPI() + ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.PLAYERS.GET_ALL_PLAYERS)
+        this.proligaApi.currentAPI(PROLIGA_API.VERSION.ONE) +
+        ProligaAPI.prepareURI(PROLIGA_API.ENDPOINTS.PLAYERS.GET_ALL_PLAYERS)
       );
   }
 }

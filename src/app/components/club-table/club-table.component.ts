@@ -36,8 +36,8 @@ export class ClubTableComponent implements OnInit {
   private getAllData() {
     this.activatedRoute.data.subscribe(
       data => {
-        console.log(data.clubData);
-        this.dataSource.data = data.clubData[0] as ClubModel[];
+        console.log(data.tablesData);
+        this.dataSource.data = data.tablesData[0] as ClubModel[];
       },
       err => {
         console.log(err);

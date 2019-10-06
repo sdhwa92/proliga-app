@@ -21,12 +21,15 @@ const appRoutes: Routes = [
     path: appRoutesNames.CLUB_TABLES,
     component: ClubTableComponent,
     resolve: {
-      clubData: ClubTableService
+      tablesData: ClubTableService
     }
   },
   {
     path: appRoutesNames.CLUBS,
-    component: ClubsComponent
+    component: ClubsComponent,
+    resolve: {
+      clubsData: ClubService
+    }
   },
   {
     path: appRoutesNames.PLAYERS,

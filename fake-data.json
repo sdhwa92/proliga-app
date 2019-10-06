@@ -321,7 +321,7 @@
       "nationality": "Brazil"
     }
   ],
-  "clubs": [
+  "tables": [
     {
       "club_id": 1,
       "club_name": "Team A",
@@ -363,6 +363,128 @@
       "max_teams": 10,
       "max_players": 15,
       "min_players": 5
+    }
+  ],
+  "clubs": [
+    {
+      "id": 1,
+      "name": "Bayern Munich",
+      "description": "Aut perferendis qui. Dolore aliquam reprehenderit. Perspiciatis doloremque non.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 2,
+      "name": "Chelsea",
+      "description": "Assumenda officiis hic. Soluta ut nisi. Ducimus enim sit.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 3,
+      "name": "AS Roma",
+      "description": "Explicabo animi delectus. Eos aperiam dolorem. Quidem veniam eos.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 4,
+      "name": "Manchester United",
+      "description": "Dolorum autem delectus. Ut cum est. Non neque placeat.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 5,
+      "name": "Chelsea",
+      "description": "Et dignissimos voluptatem. Sint sed dolor. Voluptates et sed.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 6,
+      "name": "Valencia CF",
+      "description": "Adipisci aut enim. Incidunt et ea. Eius et rerum.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 7,
+      "name": "Manchester United",
+      "description": "Quam eum quia. Quia illum dolorum. Voluptate dolor est.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 8,
+      "name": "PSV Eindhoven",
+      "description": "Ut itaque cumque. Aut dolores expedita. Reiciendis sunt vel.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 9,
+      "name": "Schalke 04",
+      "description": "Eum at ut. Pariatur mollitia quis. Pariatur aut voluptatem.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 10,
+      "name": "Juventus",
+      "description": "Laudantium natus impedit. Quisquam ullam et. Voluptatem repudiandae quam.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 11,
+      "name": "Schalke 04",
+      "description": "Sit est consequatur. Impedit officiis debitis. Vel dolor velit.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 12,
+      "name": "Bayern Munich",
+      "description": "Ea dolorem sequi. Ut sit non. Tempora qui tenetur.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 13,
+      "name": "Schalke 04",
+      "description": "Corrupti fugiat eum. Ut error fuga. Laudantium quisquam rerum.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 14,
+      "name": "Inter Milan",
+      "description": "Est enim dicta. Ut dolores ducimus. Ipsum architecto suscipit.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 15,
+      "name": "Liverpool",
+      "description": "Ut in est. Dolores voluptate possimus. Quas et sint.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 16,
+      "name": "Juventus",
+      "description": "Ut omnis excepturi. Architecto debitis blanditiis. Occaecati vitae natus.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 17,
+      "name": "Galatasaray",
+      "description": "Minus repellat enim. In rerum saepe. Distinctio aliquam nam.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 18,
+      "name": "Chelsea",
+      "description": "Animi dolore est. Pariatur ratione aperiam. Quis accusantium aspernatur.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 19,
+      "name": "FC Barcelona",
+      "description": "Modi doloremque est. Nisi voluptates et. Error et est.",
+      "logo_key": "https://placehold.it/100x100.png"
+    },
+    {
+      "id": 20,
+      "name": "Borussia Dortmund",
+      "description": "Explicabo consequatur illo. Dolor provident impedit. Voluptatibus voluptas vero.",
+      "logo_key": "https://placehold.it/100x100.png"
     }
   ]
 }
