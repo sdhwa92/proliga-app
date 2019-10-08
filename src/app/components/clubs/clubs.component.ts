@@ -6,6 +6,8 @@ import { ClubService } from '../../services/club.service';
 
 import { ClubModel } from '../../models/club.model';
 
+import * as _ from 'lodash';
+
 @Component({
   selector: 'app-clubs',
   templateUrl: './clubs.component.html',
@@ -14,7 +16,7 @@ import { ClubModel } from '../../models/club.model';
 export class ClubsComponent implements OnInit {
 
   // @TODO: Create club model
-  clubs: any;
+  clubs: ClubModel[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -28,7 +30,9 @@ export class ClubsComponent implements OnInit {
   private getAllClubs() {
     this.activatedRoute.data.subscribe(
       data => {
-        console.log(data.clubsData);
+        // console.log(data.clubsData);
+        this.clubs = _.orderBy(data.clubsData[0], ['name'], ['asc']);
+        console.log(this.clubs);
       }
     );
   }
