@@ -1,53 +1,37 @@
-/* Modules */
-import {CommonModule} from '@angular/common';
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router';
-import {AppRoutingModule} from './app.router';
-import {HttpClientModule} from '@angular/common/http';
-import {MatTableModule, MatSortModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-/* Components */
-import {AppComponent} from './app.component';
-import {NavigationComponent} from './layout/navigation/navigation.component';
-import {FooterComponent} from './layout/footer/footer.component';
-import {ClubTableComponent} from './components/club-table/club-table.component';
-import {HomeComponent} from './components/home/home.component';
-import {ClubsComponent} from './components/clubs/clubs.component';
-import {PlayersComponent} from './components/players/players.component';
+import { CoreModule } from '@app/core.module';
+import { SharedModule } from '@shared/shared.module';
 
-/* Services */
-import {ProligaAPI} from './services/proliga-api.service';
-import {ClubService} from './services/club.service';
-import {ClubTableService} from './services/club-table.service';
-import {PlayerService} from './services/player.service';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+import { AuthLayoutComponent } from '@layout/auth-layout/auth-layout.component';
+import { ContentLayoutComponent } from '@layout/content-layout/content-layout.component';
+import { NavigationComponent } from '@layout/navigation/navigation.component';
+import { FooterComponent } from '@layout/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ContentLayoutComponent,
     NavigationComponent,
-    ClubTableComponent,
-    HomeComponent,
-    ClubsComponent,
-    PlayersComponent,
-    FooterComponent
+    FooterComponent,
+    AuthLayoutComponent
   ],
   imports: [
-    CommonModule,
+    // angular
     BrowserModule,
-    RouterModule,
-    AppRoutingModule,
-    HttpClientModule,
     BrowserAnimationsModule,
-    MatTableModule,
-    MatSortModule
-  ],
-  providers: [
-    ProligaAPI,
-    ClubService,
-    ClubTableService,
-    PlayerService
+
+    // core & share
+    CoreModule,
+    SharedModule,
+
+    // app
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,8 @@
 export const appRoutesNames = {
   ROOT: '',
+  HOME: 'home',
   ADMIN: 'admin',
   CLUB_TABLES: 'tables',
   CLUBS: 'clubs',
-  PLAYERS: 'players'
+  STATS: 'stats'
 };

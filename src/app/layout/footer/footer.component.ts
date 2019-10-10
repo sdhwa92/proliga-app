@@ -10,7 +10,4 @@ export class FooterComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-  activeRoute(routename: string): boolean {
-    return this.router.url.indexOf(routename) > -1;
-  }
 }
