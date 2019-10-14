@@ -17,7 +17,7 @@ export class StatsResolver implements Resolve<any> {
   resolve( route: ActivatedRouteSnapshot, state: RouterStateSnapshot ): Observable<any> {
     console.log('Logging collected route Parameter', route.params);
 
-    return this.playerService.getAllPlayers()
+    return this.playerService.getPlayersGoalRank()
       .pipe(
         catchError(
           (err) => this.router.navigateByUrl('/')

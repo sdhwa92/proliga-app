@@ -1,4 +1,5 @@
 <div>
+  <h5>Top Players</h5>
   <table mat-table
          [dataSource]="dataSource"
          matSort
@@ -7,6 +8,10 @@
          matSortDisableClear
          (matSortChange)="sortData($event)"
          class="mat-elevation-z8">
+    <ng-container matColumnDef="rank">
+      <th mat-header-cell *matHeaderCellDef>Rank</th>
+      <td mat-cell *matCellDef="let player">{{player.rank}}</td>
+    </ng-container>
     <ng-container matColumnDef="playerName">
       <th mat-header-cell *matHeaderCellDef>Player</th>
       <td mat-cell *matCellDef="let player">{{player.first_name + ' ' + player.last_name}}</td>

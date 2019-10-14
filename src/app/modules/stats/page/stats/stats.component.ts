@@ -2,8 +2,10 @@ import { Component, OnInit, ViewChild, AfterViewInit, OnDestroy } from '@angular
 import { MatSort, MatTableDataSource } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
 import { PlayerDetails } from '@data/schema/player-details';
+import { PlayerStats } from '@data/schema/player-stats';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import {PlayerService} from '@data/service/player.service';
 
 @Component({
   selector: 'app-stats',
@@ -12,15 +14,15 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class StatsComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  public displayedColumns: string[] = ['playerName', 'club', 'nationality', 'goals'];
-  public dataSource = new MatTableDataSource<PlayerDetails>();
+  public displayedColumns: string[] = ['rank', 'playerName', 'club', 'nationality', 'goals'];
+  public dataSource = new MatTableDataSource<PlayerStats>();
 
   @ViewChild(MatSort, {static: false}) sort: MatSort;
 
   private ngUnsubscribe: Subject<any> = new Subject();
 
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
@@ -43,8 +45,8 @@ export class StatsComponent implements OnInit, AfterViewInit, OnDestroy {
       )
       .subscribe(
       data => {
-        console.log(data.statsData);
-        this.dataSource.data = data.statsData as PlayerDetails[];
+        // console.log(data.statsData);
+        this.dataSource.data = data.statsData as PlayerStats[];
       }
     );
   }
