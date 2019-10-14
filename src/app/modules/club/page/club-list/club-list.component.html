@@ -1,7 +1,14 @@
-<div class="card">
-  <img class="card-img-top" src="{{club.logo_key}}" alt="{{club.name}}">
-  <div class="card-body">
-    <h4 class="card-title">{{club.name}}</h4>
-    <a href="#" class="btn btn-dark">Club Profile <i class="fa fa-arrow-right"></i></a>
+<div class="club-card">
+  <div class="row">
+    <div class="col-lg-4 order-0 order-lg-1">
+      <div class="logo-wrapper">
+        <img class="club-logo img-thumbnail" src="{{club.logo_key}}" alt="{{club.name}}">
+      </div>
+    </div>
+    <div class="col-lg-8 order-1 order-lg-0">
+      <div class="club-info">
+        <p>{{club.name}}</p>
+      </div>
+    </div>
   </div>
 </div>
