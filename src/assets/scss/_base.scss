@@ -1,3 +1,7 @@
+// Variables, Mixins
+@import "variables";
+@import "mixins";
+
 //@TODO: Organise stylesheets constructively
 table {
   width: 100%;
@@ -11,9 +15,30 @@ th.mat-header-cell {
   max-width: 300px;
 }
 
+/* Page Title */
+#proliga_area {
+  .page-title {
+    background: $secondary;
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
+
+    .title {
+      color: $secondary-text;
+    }
+
+    .wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+}
+
 /* Footer */
 #proliga_area {
   .footer {
+    margin-top: 1.5rem;
+
     h6 {
       color: $white;
       text-align: center;

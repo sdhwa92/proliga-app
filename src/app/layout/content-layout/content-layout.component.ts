@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { appRoutesNames } from '../../app.routes.names';
 
 @Component({
   selector: 'app-content-layout',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  get isHomepage() {
+    // console.log(this.router.url);
+    if (this.router.url === '/' + appRoutesNames.HOME) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }
