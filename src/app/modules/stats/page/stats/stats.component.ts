@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
-import { MatSort, MatTableDataSource } from '@angular/material';
+import { MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
 import { ActivatedRoute } from '@angular/router';
 import { PlayerDetails } from '@data/schema/player-details';
 import { PlayerStats } from '@data/schema/player-stats';
@@ -18,6 +18,7 @@ export class StatsComponent implements OnInit, AfterViewInit, OnDestroy {
   public dataSource = new MatTableDataSource<PlayerStats>();
 
   @ViewChild(MatSort, {static: false}) sort: MatSort;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   private ngUnsubscribe: Subject<any> = new Subject();
 
@@ -27,6 +28,7 @@ export class StatsComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.loadAllPlayersStats();
+    this.dataSource.paginator = this.paginator;
   }
 
   ngAfterViewInit(): void {
