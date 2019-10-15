@@ -13,6 +13,7 @@ export class NavigationComponent implements OnInit {
   logo = 'assets/img/logo.png';
   items = [
     { link: appRoutesNames.HOME, text: 'Home' },
+    { link: appRoutesNames.TABLE, text: 'Tables' },
     { link: appRoutesNames.CLUBS, text: 'Clubs' },
     { link: appRoutesNames.STATS, text: 'Stats'}
   ];

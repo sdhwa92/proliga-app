@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { PROLIGA_API, ProligaAPI } from '../proliga-api.service';
-import { PlayerDetails } from '../schema/player-details';
+import { PlayerDetails } from '@data/schema/player-details';
 import { PlayerStats } from '@data/schema/player-stats';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';

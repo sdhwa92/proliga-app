@@ -49,6 +49,10 @@ export class PageTitleComponent implements OnInit, OnDestroy {
         this.pageTitle = 'Statistics';
         break;
       }
+      case '/' + appRoutesNames.TABLE: {
+        this.pageTitle = 'Tables';
+        break;
+      }
       default: {
         this.pageTitle = 'Page Not Found';
         break;

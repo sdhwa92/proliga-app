@@ -15,8 +15,10 @@ export const PROLIGA_API = {
     ONE: 'v1/'
   },
   ENDPOINTS: {
+    TABLES: {
+      GET_ALL_RECORDS: 'tables'
+    },
     CLUBS: {
-      GET_TABLES: 'tables',
       GET_ALL_CLUBS: 'clubs',
       GET_A_CLUB: 'clubs/{clubname}'
     },

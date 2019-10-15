@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+#proliga_area {
+  .position-table {
+    .position-table__club {
+      span {
+        padding-left: 10px;
+      }
+      .club-logo {
+        width: 32px;
+      }
+    }
+
+    .position-table__last {
+      i.fa {
+        margin-right: 2px;
+        margin-left: 2px;
+      }
+      .fa-check-circle {
+        color: $green;
+      }
+      .fa-times-circle {
+        color: $red;
+      }
+      .fa-minus-circle {
+        color: $secondary;
+      }
+    }
+
+  }
+}

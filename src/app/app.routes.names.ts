@@ -2,7 +2,7 @@ export const appRoutesNames = {
   ROOT: '',
   HOME: 'home',
   ADMIN: 'admin',
-  CLUB_TABLES: 'tables',
+  TABLE: 'tables',
   CLUBS: 'clubs',
   STATS: 'stats'
 };

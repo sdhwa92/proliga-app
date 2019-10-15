@@ -1,0 +1,60 @@
+<div class="position-table">
+  <table mat-table
+         [dataSource]="dataSource"
+         class="mat-elevation-z8">
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>#</th>
+      <td mat-cell *matCellDef="let record; let i = index">{{i + 1}}</td>
+    </ng-container>
+    <ng-container matColumnDef="club">
+      <th mat-header-cell *matHeaderCellDef>Club</th>
+      <td mat-cell *matCellDef="let record" class="position-table__club">
+        <img class="club-logo" [src]="record.logo_key" alt="{{record.name}}">
+        <span>{{record.name}}</span>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="played">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Played</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.played}}</td>
+    </ng-container>
+    <ng-container matColumnDef="won">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Won</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.won}}</td>
+    </ng-container>
+    <ng-container matColumnDef="drawn">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Drawn</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.drawn}}</td>
+    </ng-container>
+    <ng-container matColumnDef="lost">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Lost</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.lost}}</td>
+    </ng-container>
+    <ng-container matColumnDef="goals_for">
+      <th mat-header-cell *matHeaderCellDef class="text-center">GF</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.goals_for}}</td>
+    </ng-container>
+    <ng-container matColumnDef="goals_against">
+      <th mat-header-cell *matHeaderCellDef class="text-center">GA</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.goals_against}}</td>
+    </ng-container>
+    <ng-container matColumnDef="goals_diff">
+      <th mat-header-cell *matHeaderCellDef class="text-center">GF</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.goals_for - record.goals_against}}</td>
+    </ng-container>
+    <ng-container matColumnDef="points">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Points</th>
+      <td mat-cell *matCellDef="let record" class="text-center">{{record.points}}</td>
+    </ng-container>
+    <ng-container matColumnDef="last_five">
+      <th mat-header-cell *matHeaderCellDef class="text-center">Last 5</th>
+      <td mat-cell *matCellDef="let record" class="text-center position-table__last">
+        <span *ngFor="let result of record.last_five">
+          <i class="fa" [ngClass]="{'fa-check-circle': result == 1, 'fa-times-circle': result == -1, 'fa-minus-circle': result == 0}"></i>
+        </span>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>
