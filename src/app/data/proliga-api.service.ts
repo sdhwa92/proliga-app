@@ -24,6 +24,10 @@ export const PROLIGA_API = {
     },
     PLAYERS: {
       GET_ALL_PLAYERS: 'players'
+    },
+    FILTER: {
+      GET_SEASONS: 'seasons?league_id={league_id}',
+      GET_CLUBS: 'clubs?league_id={league_id}&&season_id={season_id}'
     }
   }
 };
