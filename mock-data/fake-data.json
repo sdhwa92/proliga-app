@@ -765,7 +765,7 @@
       "season_id": 1
     }
   ],
-  "seasons": [
+  "filter-seasons": [
     {
       "id": 1,
       "name": "2017/18",
@@ -780,6 +780,128 @@
       "id": 3,
       "name": "2019/20",
       "league_id": 1
+    }
+  ],
+  "filter-clubs": [
+    {
+      "id": 1,
+      "name": "Bayern Munich",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Chelsea",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 3,
+      "name": "AS Roma",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Manchester United",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Chelsea",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 6,
+      "name": "Valencia CF",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 7,
+      "name": "Manchester United",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 8,
+      "name": "PSV Eindhoven",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 9,
+      "name": "Schalke 04",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 10,
+      "name": "Juventus",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 11,
+      "name": "Schalke 04",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 12,
+      "name": "Bayern Munich",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 13,
+      "name": "Schalke 04",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 14,
+      "name": "Inter Milan",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 15,
+      "name": "Liverpool",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 16,
+      "name": "Juventus",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 17,
+      "name": "Galatasaray",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 18,
+      "name": "Chelsea",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 19,
+      "name": "FC Barcelona",
+      "league_id": 1,
+      "season_id": 1
+    },
+    {
+      "id": 20,
+      "name": "Borussia Dortmund",
+      "league_id": 1,
+      "season_id": 1
     }
   ]
 }

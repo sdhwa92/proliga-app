@@ -15,7 +15,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 If you haven't installed JSON Server on your machine, run `npm install -g json-server`.
 
-Run `json-server --watch fake-data.json`. This will run the json server to `http://localhost:3000` so that the app can consume the fake data.
+After installing JSON Server, go to the `mock-data` folder and run `json-server --watch fake-data.json --routes routes.json`. This will run the json server to `http://localhost:3000` so that the app can consume the fake data.
 
 ## Code scaffolding
 
