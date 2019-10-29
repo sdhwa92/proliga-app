@@ -1,12 +1,16 @@
 // Basic Colours
-//$primary:;
+$primary: #C4183C;
 //$primary-contrast;
-//$primary-text;
-//$secondary;
+$primary-text: #fff;
+$secondary: #5A6169;
 //$secondary-contrast;
-//$secondary-text;
+$secondary-text: #fff;
+
 $white: #fff;
 $black: #000;
+$light: #E9ECEF;
+$green: #17C671;
+$red: #C4183C;
 
 // Breakpoints for Media queries
 $screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)

@@ -1,0 +1,28 @@
+<form>
+  <mat-form-field *ngIf="enableCompetitionFilter">
+    <mat-label>Filter by Competition</mat-label>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Filter by Season</mat-label>
+    <mat-select (selectionChange)="filterChanged('season', $event)" [value]="selectedSeasonId">
+      <mat-option *ngFor="let season of seasons" [value]="season.id">{{season.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field *ngIf="enableClubFilter">
+    <mat-label>Filter by Club</mat-label>
+    <mat-select (selectionChange)="filterChanged('club', $event)">
+      <mat-option [value]="0">All Clubs</mat-option>
+      <mat-option *ngFor="let club of clubs" [value]="club.id">{{club.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field *ngIf="enablePositionFilter">
+    <mat-label>Filter by Position</mat-label>
+    <mat-select (selectionChange)="filterChanged('position', $event)">
+      <mat-option>All</mat-option>
+      <mat-option>Goalkeeper</mat-option>
+      <mat-option>Defender</mat-option>
+      <mat-option>Midfielder</mat-option>
+      <mat-option>Forward</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

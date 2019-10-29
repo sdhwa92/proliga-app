@@ -5,13 +5,19 @@ import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from './material.module';
 
+import { TableFilterComponent } from '@shared/component/table-filter/table-filter.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    TableFilterComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+
+    MaterialModule
   ],
   exports: [
     CommonModule,
@@ -19,7 +25,10 @@ import { MaterialModule } from './material.module';
     ReactiveFormsModule,
     RouterModule,
 
-    MaterialModule
+    MaterialModule,
+
+    // Components
+    TableFilterComponent
   ]
 })
 export class SharedModule { }

@@ -1,3 +1,7 @@
+// Variables, Mixins
+@import "variables";
+@import "mixins";
+
 #proliga_area {
   /* Shards Template Landing Page*/
   .shards-landing-page--1 {
@@ -5,6 +9,10 @@
     .welcome {
       &.custom-welcome {
         background-image: url("../img/wrapperbgi.jpg");
+      }
+
+      &:before {
+        background: $primary;
       }
     }
 

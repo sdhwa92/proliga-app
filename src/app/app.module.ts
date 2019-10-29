@@ -12,6 +12,7 @@ import { AuthLayoutComponent } from '@layout/auth-layout/auth-layout.component';
 import { ContentLayoutComponent } from '@layout/content-layout/content-layout.component';
 import { NavigationComponent } from '@layout/navigation/navigation.component';
 import { FooterComponent } from '@layout/footer/footer.component';
+import { PageTitleComponent } from '@layout/page-title/page-title.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from '@layout/footer/footer.component';
     ContentLayoutComponent,
     NavigationComponent,
     FooterComponent,
+    PageTitleComponent,
     AuthLayoutComponent
   ],
   imports: [

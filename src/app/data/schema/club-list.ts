@@ -3,4 +3,6 @@ export class ClubList {
   name: string;
   description: string;
   logo_key: string;
+  league_id: number;
+  season_id: number;
 }

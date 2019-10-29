@@ -30,6 +30,10 @@ const appRoutes: Routes = [
       {
         path: appRoutesNames.STATS,
         loadChildren: () => import('@modules/stats/stats.module').then(m => m.StatsModule)
+      },
+      {
+        path: appRoutesNames.TABLE,
+        loadChildren: () => import('@modules/table/table.module').then(m => m.TableModule)
       }
     ]
   },

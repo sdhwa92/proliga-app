@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+#proliga_area {
+  #club-content {
+    .club-card {
+      background: $light;
+      margin-bottom: 20px;
+
+      .club-info {
+        display: table;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+
+        p {
+          display: table-cell;
+          vertical-align: middle;
+          font-weight: bold;
+        }
+      }
+      .logo-wrapper {
+        display: table;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        background: darken( $light, 5% );
+
+        .club-logo {
+          height: 100%;
+          display: table-cell;
+          vertical-align: middle;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

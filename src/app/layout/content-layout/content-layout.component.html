@@ -3,6 +3,9 @@
     <div class="header">
       <app-navigation></app-navigation>
     </div>
+    <div *ngIf="!isHomepage" class="page-title-bar">
+      <app-page-title></app-page-title>
+    </div>
     <div class="container">
       <router-outlet></router-outlet>
     </div>

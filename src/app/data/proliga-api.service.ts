@@ -15,13 +15,19 @@ export const PROLIGA_API = {
     ONE: 'v1/'
   },
   ENDPOINTS: {
+    TABLES: {
+      GET_ALL_RECORDS: 'tables'
+    },
     CLUBS: {
-      GET_TABLES: 'tables',
       GET_ALL_CLUBS: 'clubs',
       GET_A_CLUB: 'clubs/{clubname}'
     },
     PLAYERS: {
       GET_ALL_PLAYERS: 'players'
+    },
+    FILTER: {
+      GET_SEASONS: 'filter/seasons?league_id={league_id}',
+      GET_CLUBS: 'filter/clubs?league_id={league_id}&&season_id={season_id}'
     }
   }
 };

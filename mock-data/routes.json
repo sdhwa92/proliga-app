@@ -1,0 +1,5 @@
+{
+  "/filter/seasons": "/filter-seasons",
+  "/filter/seasons?league_id=:id": "/filter-seasons?league_id=:id",
+  "/filter/clubs": "/filter-clubs"
+}
